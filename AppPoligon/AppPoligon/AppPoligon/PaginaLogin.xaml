@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPoligon.PaginaLogin">
+  <ContentPage.Content>
+    <ScrollView>
+      <StackLayout Padding="10,20,10,10" Spacing="20">
+        <Label Text="Poligono Industrial Oeste"
+               FontSize="30"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">          
+        </Label>
+        <Label Text="Introduce tu email y contraseña y presione el botón de Login"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">          
+        </Label>
+        <StackLayout Orientation="Horizontal">
+          <Label Text="E-Mail"
+                 HorizontalOptions="Start"
+                 VerticalOptions="Center">            
+          </Label>
+          <Entry x:Name="emailEntry"
+                 Placeholder="Entra tu email"
+                 Keyboard="Email"
+                 Text="rarara@gmail.com"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="Center">            
+          </Entry>                    
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+          <Label Text="Rememberme"
+                 HorizontalOptions="Start"
+                 VerticalOptions="Center">            
+          </Label>
+          <Switch x:Name="rememberSwitch"
+                  IsToggled="true"
+                  HorizontalOptions="Start"
+                  VerticalOptions="Center">            
+          </Switch>                            
+        </StackLayout>
+        <ActivityIndicator x:Name="waitActivityIndicator"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand">          
+        </ActivityIndicator>
+        <Button x:Name="loginButton"
+                Text="Login"
+                BackgroundColor="White"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Center">          
+        </Button>                        
+      </StackLayout>
+    </ScrollView>
+  </ContentPage.Content>  
+</ContentPage>
